@@ -57,7 +57,7 @@ export const About = () => {
                 aliquam quisquam dolore qui?
               </p>
             </div>
-            <div className="flex justify-between py-36 px-20">
+            <div className="xl:flex  justify-between py-36 px-20">
               {CardInfo.map(
                 (
                   { picture, title, paragraph, location, date, rating },
