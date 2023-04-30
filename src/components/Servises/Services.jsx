@@ -69,7 +69,7 @@ const Services = () => {
       <div className="ml-[25rem] ">
         <img src={AD} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 ">
+        <div className="grid grid-cols-1  xl:grid-cols-2 2xl:grid-cols-3">
           {services.map((type, index) => (
             <TypesOfServices service={type} index={index} />
           ))}
