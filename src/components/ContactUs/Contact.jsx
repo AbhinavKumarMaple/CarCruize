@@ -5,22 +5,29 @@ import fb from "../ContactUs//assets/fb.png";
 import insta from "../ContactUs//assets/insta.png";
 import ggl from "../ContactUs//assets/ggl.png";
 import linkedIn from "../ContactUs//assets/linkedIn.png";
+import callUs from './assets/callUs.svg'
+import visitUs from './assets/visitUs.svg'
+import writeToUs from './assets/writeToUs.svg'
+
 
 const Contact = () => {
   const [page, setpage] = useState("left");
 
   const items = [
     {
-      title: "The Benefits of Meditation",
+      icon : writeToUs,
+      title: "Write to us",
       para1: "Meditation is a practice that",
       link: "Research has shown that ",
     },
     {
-      title: "The Benefits of Meditation",
+      icon : visitUs,
+      title: "Visit Us",
       para1: "Meditation is a practice that",
       link: "Research has shown that ",
     },
     {
+      icon : callUs,
       title: "The Benefits of Meditation",
       para1: "Meditation is a practice that",
       link: "Research has shown that ",
@@ -28,25 +35,29 @@ const Contact = () => {
   ];
 
   return (
-    <div className="bg-black rounded-tr-lg rounded-br-lg py-7">
-      <div className=" sm:ml-11    lg:flex flex-wrap sm:justify-start">
-        <div className="  lg:w-3/5 lg:border lg:flex   sm:border-white rounded-xl">
-          <div className="flex flex-col  sm:px-4 sm:w-7/12">
-            <h1 className="text-5xl sm:pt-8 font-bold text-white ">Contact Us</h1>
+    <div className="bg-[#2C2C2C] rounded-tr-lg rounded-br-lg py-8 px-[16px]">
+      <div className="  lg:flex justify-between ">
+        <div className="   w-[1155px] lg:border lg:flex sm:border-white rounded-xl">
+        
+          <div className="flex flex-col  sm:px-4 ">
+            <h1 className="text-[30px]  font-Montserrat sm:pt-8 font-bold text-white ">Contact Us</h1>
+            <div className="max-w-[568px]">
+
             {items.map((e, index) => (
-              <Listt key={index} title={e.title} para={e.para1} link={e.link} />
+              <Listt key={index} logo={e.icon} title={e.title} para={e.para1} link={e.link} />
             ))}
+            </div>
             <div className="flex justify-between items-center">
-              <div>
-                <h1 className="text-white">Get in touch with us on:</h1>
-                <div className="sm:flex space-x-6 pt-2">
+              <div className="items-center ">
+                <h1 className="text-TextWhite">Get in touch with us on:</h1>
+                <div className="sm:flex space-x-[16px] pt-2">
                   <img src={fb} className="w-7 cursor-pointer"></img>
                   <img src={insta} className="w-7 cursor-pointer"></img>
                   <img src={ggl} className="w-7 cursor-pointer"></img>
                   <img src={linkedIn} className="w-7 cursor-pointer"></img>
                 </div>
               </div>
-              <div className="text-white text-center flex flex-col">
+              <div className="text-pila underline-offset-4 underline text-center flex flex-col">
                 <a href="" className="cursor-pointer">
                   Terms & Condition
                 </a>
@@ -55,37 +66,37 @@ const Contact = () => {
             </div>
           </div>
           <div className="bg-white mx-3 my-8 w-[2px] " />
-          <div className="  sm: text-white  m-6 sm:w-72 text-left ">
+          <div className="  sm: text-white  m-6 max-w-[405px] text-left ">
             <div className="">
-              <h1 className="text-2xl font-bold ">
+              <h1 className="text-[30px] font-Montserrat font-bold ">
                 Looks Like You've Got Something We Can Help With
               </h1>
             </div>
-            <p className="text-sm text-left ">Tell Us About It Here</p>
-            <form className="space-y-5  flex-col py-5">
+            <p className="text-[24px] font-Montserrat font-bold text-left ">Tell Us About It Here</p>
+            <form className="max-w-[407px] space-y-[20px] font-lato font-extrabold text-[16px] ">
               <input
                 type="text"
                 placeholder="Full name"
-                className="sm:px-10 lg:px-10 rounded-lg bg-black border"
+                className="w-full h-[43px]  rounded-[10px] pl-5 bg-[#2C2C2C] border"
               ></input>
               <input
                 type="text"
                 placeholder="Email"
-                className="sm:px-10 rounded-lg bg-black border"
+                className="w-full h-[43px] rounded-[10px] pl-5 bg-[#2C2C2C] border"
               ></input>
               <input
                 type="text"
                 placeholder="Phone"
-                className="sm:px-10 rounded-lg bg-black border"
+                className="w-full h-[43px] rounded-[10px] pl-5 bg-[#2C2C2C] border"
               ></input>
               <input
                 type="text"
                 placeholder="Type your massage here"
-                className="sm:px-10 rounded-lg bg-black py-4 border"
+                className="w-full h-[78px] rounded-[10px] pl-5 bg-[#2C2C2C] border "
               ></input>
-              <h1>Please Choose a niche below:</h1>
+              <h1 className="font-lato text-[20px] font-regular">Please Choose a niche below:</h1>
               <div className="">
-                <div>
+                <div >
                   <input
                     type="checkbox"
                     id="typing"
@@ -94,7 +105,7 @@ const Contact = () => {
                     placeholder=""
                     className="bg-black"
                   ></input>
-                  <label className="p-2" htmlFor="flexCheckDefault">
+                  <label className="font-lato text-[20px] font-regular pl-[15px]" htmlFor="flexCheckDefault">
                     Service Related Query
                   </label>
                 </div>
@@ -106,7 +117,7 @@ const Contact = () => {
                     value={"Service related query"}
                     placeholder=""
                   ></input>
-                  <label className="p-2" htmlFor="flexCheckDefault">
+                  <label className="font-lato text-[20px] font-regular pl-[15px]" htmlFor="flexCheckDefault" htmlFor="flexCheckDefault">
                     Other
                   </label>
                 </div>
@@ -118,7 +129,7 @@ const Contact = () => {
                     value={"Service related query"}
                     placeholder=""
                   ></input>
-                  <label className="p-2" htmlFor="flexCheckDefault">
+                  <label className="font-lato text-[20px] font-regular pl-[15px]" htmlFor="flexCheckDefault" htmlFor="flexCheckDefault">
                     Feedback
                   </label>
                 </div>
@@ -130,7 +141,7 @@ const Contact = () => {
                     value={"Service related query"}
                     placeholder=""
                   ></input>
-                  <label className="p-2" htmlFor="flexCheckDefault">
+                  <label className="font-lato text-[20px] font-regular pl-[15px]" htmlFor="flexCheckDefault" htmlFor="flexCheckDefault">
                     Wish To Partner-up
                   </label>
                 </div>
@@ -142,19 +153,19 @@ const Contact = () => {
                     value={"Service related query"}
                     placeholder=""
                   ></input>
-                  <label className="p-2" htmlFor="flexCheckDefault">
+                  <label className="font-lato text-[20px] font-regular pl-[15px]" htmlFor="flexCheckDefault" htmlFor="flexCheckDefault">
                     Franchise Related Query
                   </label>
                 </div>
               </div>
-              <button className="bg-pila sm:h-[55px] font-semibold text-[24px]  lg:w-[407px] rounded-[79px] text-black">
+              <button className="bg-pila sm:h-[55px] font-lato font-bold text-[20px]  lg:w-[195px] rounded-[10px] text-[#242424]">
                 SUBMIT
               </button>
             </form>
           </div>
         </div>
-        <div></div>
-        <div className="sm:w-4/12 rounded-xl  bg-black border-2  mx-5 ">
+        <div className="w-[553px] h-[789px] rounded-xl  border-2 ">
+        <div >
           <div className="text-gray-500 borde text-center flex h-14 rounded-xl">
             <div
               className={`${
@@ -178,6 +189,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="pt-5">{page == "left" ? <Faqs /> : <right />};</div>
+        </div>
         </div>
       </div>
     </div>
