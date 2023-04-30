@@ -1,0 +1,3 @@
+.navicon{
+    @apply cursor-pointer text-sm flex-col  w-8;
+}
