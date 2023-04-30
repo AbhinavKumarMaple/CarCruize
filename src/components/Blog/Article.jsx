@@ -12,7 +12,7 @@ export default function Article({ img }) {
   };
   return (
     <div className="max-h-[269px] flex group">
-      <div className="group-hover:mr-[50px] group-hover:h-auto group-hover:w-[5px] group-hover:border-2 group-hover:bg-pila group-hover:rounded-full group-hover:border-pila duration-500 ease-in-out delay-150 transition-transform"></div>
+      <div className="group-hover:mr-[50px] group-hover:h-auto group-hover:w-[5px] group-hover:border-2 group-hover:bg-pila group-hover:rounded-full group-hover:border-pila duration-500 ease-in-out "></div>
       <div className="border-b-2 py-[45px] flex w-full ">
         <div className="  ">
           <img
