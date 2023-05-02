@@ -36,7 +36,7 @@ const Contact = () => {
 
   return (
     <div className="bg-[#2C2C2C] rounded-tr-lg rounded-br-lg py-8 px-[16px]">
-      <div className="  lg:flex justify-between ">
+      <div className="  2xl:flex justify-between ">
         <div className="   w-[1155px] lg:border lg:flex sm:border-white rounded-xl">
         
           <div className="flex flex-col  sm:px-4 ">
@@ -117,7 +117,7 @@ const Contact = () => {
                     value={"Service related query"}
                     placeholder=""
                   ></input>
-                  <label className="font-lato text-[20px] font-regular pl-[15px]" htmlFor="flexCheckDefault" htmlFor="flexCheckDefault">
+                  <label className="font-lato text-[20px] font-regular pl-[15px]" htmlFor="flexCheckDefault" >
                     Other
                   </label>
                 </div>
@@ -129,7 +129,7 @@ const Contact = () => {
                     value={"Service related query"}
                     placeholder=""
                   ></input>
-                  <label className="font-lato text-[20px] font-regular pl-[15px]" htmlFor="flexCheckDefault" htmlFor="flexCheckDefault">
+                  <label className="font-lato text-[20px] font-regular pl-[15px]" htmlFor="flexCheckDefault">
                     Feedback
                   </label>
                 </div>
@@ -141,7 +141,7 @@ const Contact = () => {
                     value={"Service related query"}
                     placeholder=""
                   ></input>
-                  <label className="font-lato text-[20px] font-regular pl-[15px]" htmlFor="flexCheckDefault" htmlFor="flexCheckDefault">
+                  <label className="font-lato text-[20px] font-regular pl-[15px]" htmlFor="flexCheckDefault">
                     Wish To Partner-up
                   </label>
                 </div>
@@ -153,7 +153,7 @@ const Contact = () => {
                     value={"Service related query"}
                     placeholder=""
                   ></input>
-                  <label className="font-lato text-[20px] font-regular pl-[15px]" htmlFor="flexCheckDefault" htmlFor="flexCheckDefault">
+                  <label className="font-lato text-[20px] font-regular pl-[15px]" htmlFor="flexCheckDefault">
                     Franchise Related Query
                   </label>
                 </div>
