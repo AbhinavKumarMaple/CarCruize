@@ -11,6 +11,7 @@ import DashboardMain from "./components/Dashboard/DashboardMain";
 import Landing from "./components/Dashboard/LandingPage/Landing";
 import Blog from "./components/Blog/Blog";
 import BlogView from "./components/Blog/BlogView";
+import Footer from "./components/Components/Footer";
 function App() {
   return (
     <div className="bg-bg">
@@ -29,6 +30,7 @@ function App() {
             <Route path="/login" element={<LoginPage />} />
           </Routes>
         </div>
+        <Footer />
       </div>
     </div>
   );
