@@ -10,6 +10,7 @@ import { Route, Routes } from "react-router-dom";
 import DashboardMain from "./components/Dashboard/DashboardMain";
 import Landing from "./components/Dashboard/LandingPage/Landing";
 import Blog from "./components/Blog/Blog";
+import BlogView from "./components/Blog/BlogView";
 function App() {
   return (
     <div className="bg-bg">
@@ -22,6 +23,7 @@ function App() {
             <Route path="/dashboard" element={<DashboardMain />} />
             <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogView />} />
             <Route path="/support" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/login" element={<LoginPage />} />
