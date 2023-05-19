@@ -9,6 +9,8 @@ import linkedIn from "../ContactUs//assets/linkedIn.png";
 import callUs from "./assets/callUs.svg";
 import visitUs from "./assets/visitUs.svg";
 import writeToUs from "./assets/writeToUs.svg";
+import { Chat } from "./Chat";
+import { MessageInput } from "./Chat/MessageInput";
 
 const Contact = () => {
   const [page, setpage] = useState("left");
@@ -114,6 +116,7 @@ const Contact = () => {
                     value={"Service related query"}
                     placeholder=""
                     className="bg-black"
+                    
                   ></input>
                   <label
                     className="font-lato text-[20px] font-regular pl-[15px]"
@@ -129,6 +132,8 @@ const Contact = () => {
                     name="typing"
                     value={"Service related query"}
                     placeholder=""
+                    className=" accent-pink-500 bg-black"
+                    style={{ backgroundColor: '#000000' }}
                   ></input>
                   <label
                     className="font-lato text-[20px] font-regular pl-[15px]"
@@ -174,6 +179,7 @@ const Contact = () => {
                     name="typing"
                     value={"Service related query"}
                     placeholder=""
+                   
                   ></input>
                   <label
                     className="font-lato text-[20px] font-regular pl-[15px]"
@@ -189,14 +195,14 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="w-[553px] h-[789px] rounded-xl  border-2  ">
+        <div className="w-[553px] h-[789px] rounded-xl  border-2  relative">
           <div className="">
             <div className="text-gray-500 borde text-center flex h-14 rounded-xl ">
               <div
                 className={`${
                   page == "left"
-                    ? "cursor-pointer border font-Montserrat leading-none text-[30px] font-bold rounded-tl-xl flex-1 py-3 text-black bg-pila"
-                    : " text-TextWhite border flex-1 font-Montserrat leading-none font-bold text-[30px] cursor-pointer rounded-tl-xl py-3"
+                    ? "cursor-pointer  font-Montserrat leading-none text-[30px] font-bold  flex-1 py-3 text-black bg-pila"
+                    : " text-TextWhite  flex-1 font-Montserrat leading-none font-bold text-[30px] cursor-pointer  py-3"
                 }`}
                 onClick={() => setpage("left")}
               >
@@ -205,15 +211,15 @@ const Contact = () => {
               <div
                 className={`${
                   page == "right"
-                    ? "cursor-pointer border rounded-tr-xl font-Montserrat leading-none text-[30px] font-bold text-black flex-1 py-3 bg-pila"
-                    : " text-TextWhite border cursor-pointer font-Montserrat leading-none text-[30px] font-bold rounded-tr-xl flex-1 py-3"
+                    ? "cursor-pointer   font-Montserrat leading-none text-[30px] font-bold text-black flex-1 py-3 bg-pila"
+                    : " text-TextWhite  cursor-pointer font-Montserrat leading-none text-[30px] font-bold  flex-1 py-3"
                 }`}
                 onClick={() => setpage("right")}
               >
                 Lat's Chat
               </div>
             </div>
-            <div className="pt-5 border-t">
+            <div className="pt-5 border-t ">
               {page == "left" ? (
                 <div>
                   <Faqs
@@ -258,7 +264,9 @@ const Contact = () => {
                   />
                 </div>
               ) : (
-                <div></div>
+                <div className=""><Chat/>  <div className="absolute left-1/2 -translate-x-1/2 w-full  bottom-[21px] px-[21px] ">
+                <MessageInput />
+              </div></div>
               )}
             </div>
           </div>
