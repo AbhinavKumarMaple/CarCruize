@@ -27,10 +27,10 @@ function App() {
             <Route path="/blog/:id" element={<BlogView />} />
             <Route path="/support" element={<Contact />} />
             <Route path="/about" element={<About />} />
-            <Route path="/login" element={<LoginPage />} />
+            {/* <Route path="/login" element={<LoginPage />} /> */}
           </Routes>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   );

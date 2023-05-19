@@ -53,12 +53,12 @@ const Services = () => {
     <div className="">
       <div className="bg-sideNav w-[400px] h-[875px] text-white fixed px-2">
         {types.map(({name,icon}) => (
-          <div className="flex ">
+          <div className="flex hover:bg-[#A0A0A0] hover:text-black cursor-pointer hover:underline">
             <div className="w-[77px] h-[67px]  flex justify-center ">
-              <img src={icon} className="w-[32px]  " alt="image" />
+              <img src={icon} className="w-[32px] " alt="image" />
             </div>
             <div className=" h-[67px] flex justify-center  items-center">
-              <h1 className=" text-white text-[20px] font-regular font-lato cursor-pointer hover:underline px-5 ">
+              <h1 className=" text-[20px] font-regular font-lato  px-5 ">
                 {" "}
                 {name}
               </h1>
@@ -71,7 +71,7 @@ const Services = () => {
 
         <div className="grid grid-cols-1  xl:grid-cols-2 2xl:grid-cols-3">
           {services.map((type, index) => (
-            <TypesOfServices service={type} index={index} />
+            <TypesOfServices service={type} index={index} className="" />
           ))}
           {/* <ServiceDesc/> */}
         </div>
