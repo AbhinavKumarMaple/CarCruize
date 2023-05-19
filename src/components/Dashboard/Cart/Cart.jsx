@@ -1,6 +1,6 @@
 import Wallet from "../../assets/asset/Wallet.png";
 import ManCart from "../../assets/asset/ManCart.svg";
-import Ad from "../../assets/asset/Ad.png";
+import Ad from "../../assets/asset/AD.png";
 import SAVE from "../../assets/asset/SAVE.png";
 import DENTING from "../../assets/asset/DENTING.png";
 const Cart = () => {
