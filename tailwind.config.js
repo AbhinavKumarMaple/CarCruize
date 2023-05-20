@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       colors:{
+          
           "bg":"#4C4C4C",
           "prime":"#1A1C22",
           "second":"#2C2C2C",
@@ -19,6 +20,7 @@ export default {
         fontFamily: {
           'lato': ['Lato', 'sans-serif'],
           'Montserrat': ['Montserrat', 'sans-serif'],
+          'Poppins' : ['Poppins']
         },
         fontWeight: {
           'light': 200,
@@ -29,5 +31,5 @@ export default {
     },
 
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
   }

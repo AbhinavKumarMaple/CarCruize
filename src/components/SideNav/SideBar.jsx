@@ -6,7 +6,7 @@ import service from "../SideNav/assets/service.svg";
 import blog from "../SideNav/assets/blog.svg";
 import support from "../SideNav/assets/support.svg";
 import about from "../SideNav/assets/about.svg";
-import login from "../SideNav/assets/login.svg";
+import OpenApp from "../SideNav/assets/OpenApp.svg";
 import { NavLink, useLocation, useParams } from "react-router-dom";
 import '../../index.css'
 
@@ -18,7 +18,7 @@ const buttons = [
   { path: "/blog", icon: blog, name: "Blog" },
   { path: "/support", icon: support, name: "Support" },
   { path: "/about", icon: about, name: "AboutUs" },
-  { path: "/login", icon: login, name: "" },
+  { path: "/OpenApp", icon: OpenApp, name: "OpenApp" },
 ];
 
 function SideBar() {

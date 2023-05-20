@@ -4,6 +4,7 @@ import yelloprofile from "../assets/asset/yelloprofile.png";
 import fillPhone from "../assets/asset/fillPhone.png";
 import Booking from "./booking/Booking";
 import Cart from "./Cart/Cart";
+import Wallet from "./Wallet/Wallet";
 const DashboardMain = () => {
   const carData = [
     {
@@ -114,8 +115,9 @@ const DashboardMain = () => {
     <div className="w-[325px]">
         <Booking/>
     </div>
-    <div className="bg-prime max-h-[863px] rounded-[10px] border-2 overflow-hidden">
-        <Cart/>
+    <div className="bg-prime max-h-[863px] rounded-[10px] border-2 w-full overflow-hidden">
+        {/* <Cart/> */}
+        <Wallet/>
     </div>
     </div>
   );

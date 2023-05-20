@@ -195,7 +195,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="w-[553px] h-[789px] rounded-xl  border-2  relative">
+        <div className="w-[553px] whitespace-nowrap overflow-auto scrollbar-hide overflow-x-hidden h-[789px] rounded-xl  border-2  relative">
           <div className="">
             <div className="text-gray-500 borde text-center flex h-14 rounded-xl ">
               <div
@@ -221,7 +221,7 @@ const Contact = () => {
             </div>
             <div className="pt-5 border-t ">
               {page == "left" ? (
-                <div>
+                <div className=" ">
                   <Faqs
                     title="How to book a car service with CarCruize?"
                     desc="How to book a car service with CarCruize?"
