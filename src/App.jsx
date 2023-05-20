@@ -11,7 +11,7 @@ import DashboardMain from "./components/Dashboard/DashboardMain";
 import Landing from "./components/Dashboard/LandingPage/Landing";
 import Blog from "./components/Blog/Blog";
 import BlogView from "./components/Blog/BlogView";
-import Footer from "./components/Components/Footer";
+import ServiceHistory from "./components/Dashboard/ServiceHistory/ServiceHistory";
 function App() {
   return (
     <div className="bg-bg">
@@ -21,7 +21,7 @@ function App() {
         <div className="ml-[7.2rem]  rounded-r-[10px] overflow-">
           <Routes>
             <Route path="/" element={<HomeMain />} />
-            <Route path="/dashboard" element={<DashboardMain />} />
+            <Route path="/dashboard" element={<ServiceHistory />} />
             <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogView />} />
