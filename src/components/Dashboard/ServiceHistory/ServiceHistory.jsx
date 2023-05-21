@@ -1,6 +1,7 @@
-import React from "react";
+import * as Popover from '@radix-ui/react-popover';
 import go from "../../assets/ServiceHistory/go.svg";
 import Action from "../../assets/ServiceHistory/Action.svg";
+import * as Separator from '@radix-ui/react-separator';
 const ServiceHistory = () => {
   const ServiceHistory = [
     {
@@ -72,7 +73,7 @@ const ServiceHistory = () => {
                 <h1 className="w-[168px]  rounded-[20px] border items-center flex justify-center">
                   {Date}
                 </h1>
-                <div className="w-[244px]  rounded-[20px] px-[44px] border">
+                <div className="w-[244px] font-lato font-light  rounded-[20px] px-[44px] border">
                   <h1>{CarName}</h1>
                   <h1>{Number}</h1>
                 </div>
@@ -86,8 +87,42 @@ const ServiceHistory = () => {
                   {Total}
                 </h1>
                 <div className="w-[168px] rounded-[20px] items-center flex justify-center">
-                  <img src={Action} alt="" />
-                </div>
+                <Popover.Root>
+    <Popover.Trigger asChild>
+      <button  aria-label="Update dimensions">
+      <div className='flex rotate-90 text-[45px] justify-center items-center ml-6'>...</div>
+      </button>
+    </Popover.Trigger>
+    <Popover.Portal>
+      <Popover.Content className="" sideOffset={0}>
+        <div className='  text-prime bg-[#888888] rounded-[10px] font-lato font-semibold text-[25.58px]  '>
+          <p className="mx-2 hover:bg-pila hover:rounded-[10px]   hover:px-[10px]" >
+            invoice
+          </p>
+          <Separator.Root className="bg-[#4C4C4C] h-[1px] mx-2 "
+        decorative
+        orientation="vertical"/>
+        <p className="hover:bg-pila hover:rounded-[10px]   hover:px-[10px] mx-[20px]" >
+            job Card
+          </p>
+          <Separator.Root className="bg-[#4C4C4C] h-[1px] mx-2"
+        decorative
+        orientation="vertical"/>
+          <p className="mx-2 hover:bg-pila hover:rounded-[10px]   px-[10px" >
+            Car's Health Report
+          </p>
+          <Separator.Root className="bg-[#4C4C4C] h-[1px] mx-2"
+        decorative
+        orientation="vertical"/>
+          <p className="mx-2 hover:bg-pila hover:rounded-[10px]   hover:px-[10px]" >
+            Repeat Service
+          </p>
+        </div>
+        
+      </Popover.Content>
+    </Popover.Portal>
+  </Popover.Root>
+                  </div>
               </div>
               <div
                 className={`w-full h-[2px] bg-bg my-[24px] ${

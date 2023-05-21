@@ -5,6 +5,7 @@ import fillPhone from "../assets/asset/fillPhone.png";
 import Booking from "./booking/Booking";
 import Cart from "./Cart/Cart";
 import Wallet from "./Wallet/Wallet";
+import { Link } from "react-router-dom";
 const DashboardMain = () => {
   const carData = [
     {
@@ -88,9 +89,9 @@ const DashboardMain = () => {
               <div>
                 <div className="flex justify-between max-w-[315px] pt-6 pb-1 text-TextWhite font-lato font-semibold text-[16px]">
                   <h1>It's been</h1>
-                  <a className="text-pila font-semibold cursor-pointer font-Montserrat text-[16px]">
+                  <Link to="service" className="text-pila font-semibold cursor-pointer font-Montserrat text-[16px]">
                     Service History
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="w-[275px] h-[107px]  bg-gradient-to-l from-[#79B332] to-[#F2F0A4] rounded-[10px]">
