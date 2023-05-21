@@ -29,6 +29,7 @@ function App() {
             <Route path="/blog/:id" element={<BlogView />} />
             <Route path="/support" element={<Contact />} />
             <Route path="/about" element={<About />} />
+              <Route path="*" element={<About />} />
             {/* <Route path="/login" element={<LoginPage />} /> */}
           </Routes>
         </div>
