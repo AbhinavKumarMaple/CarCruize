@@ -21,7 +21,9 @@ function App() {
         <div className="ml-[7.2rem]  rounded-r-[10px] overflow-">
           <Routes>
             <Route path="/" element={<HomeMain />} />
-            <Route path="/dashboard" element={<ServiceHistory />} />
+            <Route path="/dashboard" element={<DashboardMain />} />
+
+            <Route path="/dashboard/service" element={<ServiceHistory />} />
             <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogView />} />
