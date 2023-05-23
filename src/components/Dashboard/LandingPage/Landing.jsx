@@ -6,11 +6,6 @@ import React from "react";
 const Landing = () => {
   return (
     <div className="bg-[#242424]">
-
-
-
-
-
       <div className="bg-white rounded-[10px] rounded-br-[70px] -[19px] flex">
         <div clas>
           <div className="p-[42px] ">
