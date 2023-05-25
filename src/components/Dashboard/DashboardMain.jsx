@@ -23,7 +23,7 @@ const DashboardMain = () => {
 
 
   return (
-    <div className="flex flex-row gap-4 bg-second p-3">
+    <div className="flex flex-row gap-4 bg-second p-3  ">
 
     
       <div className="w-[377px] h-[876px]  ">
@@ -32,7 +32,7 @@ const DashboardMain = () => {
         <div className="  h-[249px] ">
         <div className="flex justify-center  ">
           <div>
-            <div className="rounded-[10px] ">
+            <div className="rounded-[10px] p-[13px]">
               <img src={yelloprofile} className="mx-auto"/>
             </div>
             <div className="text-center">

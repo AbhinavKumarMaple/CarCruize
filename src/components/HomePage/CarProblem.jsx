@@ -13,14 +13,14 @@ const CarProblem = () => {
             </div>
             <div className="py-2 text-white font-semibold font-Montserrat text-[18px]">
               <h1>Get instant help On-the-Go....</h1>
-              <div className="my-4 h-[1px] bg-black w-full"/>
+              <div className="my-4 h-[1px] bg-TextWhite w-full"/>
             </div>
             <div className='space-y-3 text-white'>
               <lebal className="text-[30px] font-bold font-Montserrat">Name your car</lebal>
               <input
                 type="text"
                 placeholder="Eg:Baleno"
-                className="py-2 rounded-lg border-2 placeholder-black place border-bg w-full text-[16px] font-semibold font-lato pl-3"
+                className="py-2 rounded-lg border-2 placeholder-black  text-black w-full text-[16px] font-semibold font-lato pl-3"
               ></input>
             </div >
             <div className='space-y-3 text-white'>
@@ -28,12 +28,11 @@ const CarProblem = () => {
               <input
                 type="text"
                 placeholder="Enter your mobile number here"
-                className="py-2 rounded-lg border-2 placeholder-black place border-bg w-full text-[16px] font-semibold font-lato pl-3"
-              ></input>
+                className="py-2 rounded-lg border-2 placeholder-black  text-black w-full text-[16px] font-semibold font-lato pl-3"              ></input>
             </div>
             <div className="py-5">
-              <button className="bg-pila px-5  py-1 font-bold rounded-lg text-[18px] font-lato">
-                Check services
+              <button className="bg-pila px-5 text-black  py-1 font-bold rounded-lg text-[18px] font-lato">
+                CHECK SERVICES
               </button>
             </div>
           </div>

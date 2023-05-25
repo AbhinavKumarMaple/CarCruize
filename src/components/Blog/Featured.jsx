@@ -25,14 +25,14 @@ export default function Featured({ link }) {
           </div>
         </div>
         <Link to={`/blog/${link}`}>
-          <div className="border-white hover:border-pila rounded-[10px] p-[35px] border-2">
-            <div className="flex flex-col gap-[10px]">
-              <img src={featured.img} />
-              <div className="flex gap-[80px] text-TextWhite font-lato font-semibold text-[16px]">
+          <div className="border-white hover:border-pila rounded-[10px] max-h-[727px] max-w-[852px] px-[35px] py-[30px] border-2">
+            <div className="flex flex-col ">
+              <img src={featured.img} className="max-h-[393px]"/>
+              <div className="flex gap-[80px] pt-[20px] pb-[10px] text-TextWhite font-lato font-semibold text-[16px]">
                 <h1>{featured.date}</h1>
                 <ul className="list-disc">
                   <li>
-                    <h1>0 Views {featured.views}</h1>
+                    <h1> {featured.views} Views</h1>
                   </li>
                 </ul>
               </div>
@@ -44,7 +44,7 @@ export default function Featured({ link }) {
                   {featured.desc}
                 </h1>
               </div>
-              <div className="pt-[40px]">
+              <div className="py-[40px]">
                 <button className="bg-pila max-w-[195px] h-[55px] rounded-[8px] text-black w-full font-bold ">
                   View
                 </button>
