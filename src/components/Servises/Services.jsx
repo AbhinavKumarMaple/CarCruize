@@ -50,7 +50,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="">
+    <div className="bg-prime">
       <div className="bg-sideNav w-[400px] h-[875px] text-white fixed px-2">
         {types.map(({name,icon}) => (
           <div className="flex hover:bg-[#A0A0A0] hover:text-black cursor-pointer hover:underline">

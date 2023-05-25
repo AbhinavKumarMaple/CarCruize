@@ -95,26 +95,26 @@ const ServiceHistory = () => {
     </Popover.Trigger>
     <Popover.Portal>
       <Popover.Content className="" sideOffset={0}>
-        <div className='  text-prime bg-[#888888] rounded-[10px] font-lato font-semibold text-[25.58px]  '>
-          <p className="mx-2 hover:bg-pila hover:rounded-[10px]   hover:px-[10px]" >
+        <div className=' w-[260px] text-prime bg-[#888888] rounded-[10px] font-lato font-semibold text-[25.58px]  '>
+          <p className="   hover:bg-pila hover:rounded-[10px]   px-[20px]" >
             invoice
           </p>
           <Separator.Root className="bg-[#4C4C4C] h-[1px] mx-2 "
         decorative
         orientation="vertical"/>
-        <p className="hover:bg-pila hover:rounded-[10px]   hover:px-[10px] mx-[20px]" >
+        <p className="hover:bg-pila hover:rounded-[10px]   px-[20px]" >
             job Card
           </p>
-          <Separator.Root className="bg-[#4C4C4C] h-[1px] mx-2"
+          <Separator.Root className="bg-[#4C4C4C] h-[1px] px-2"
         decorative
         orientation="vertical"/>
-          <p className="mx-2 hover:bg-pila hover:rounded-[10px]   px-[10px" >
+          <p className=" hover:bg-pila hover:rounded-[10px] flex self-center pl-[20px]" >
             Car's Health Report
           </p>
-          <Separator.Root className="bg-[#4C4C4C] h-[1px] mx-2"
+          <Separator.Root className="bg-[#4C4C4C] h-[1px] px-2" 
         decorative
         orientation="vertical"/>
-          <p className="mx-2 hover:bg-pila hover:rounded-[10px]   hover:px-[10px]" >
+          <p className=" hover:bg-pila hover:rounded-[10px] px-[20px]" >
             Repeat Service
           </p>
         </div>

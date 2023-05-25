@@ -28,9 +28,9 @@ function NavBar() {
               <input
                 type="text"
                 placeholder="  Search"
-                className="bg-prime  w-16 md:w-[261px] sm:border-2 h-[42px]   rounded-lg border-cyan-50 mr-3"
+                className="bg-prime focus:w-[503px] focus:bg-TextWhite  w-16 md:w-[261px] focus:text-black sm:border-2 h-[42px]   rounded-lg border-cyan-50 mr-3"
               />
-              <FiSearch className="sm:h-[15px]  sm:absolute text-white  right-6 cursor-pointer" />
+              <FiSearch className="sm:h-[15px]  sm:absolute focus:text-black  right-6 cursor-pointer" />
             </div>
 
           </div>
