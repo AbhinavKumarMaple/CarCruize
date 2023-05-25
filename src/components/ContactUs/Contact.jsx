@@ -11,6 +11,8 @@ import visitUs from "./assets/visitUs.svg";
 import writeToUs from "./assets/writeToUs.svg";
 import { Chat } from "./Chat";
 import { MessageInput } from "./Chat/MessageInput";
+import * as Checkbox from "@radix-ui/react-checkbox";
+import { CheckIcon } from "@radix-ui/react-icons";
 
 const Contact = () => {
   const [page, setpage] = useState("left");
@@ -55,7 +57,7 @@ const Contact = () => {
                 />
               ))}
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between py-[60px] items-center">
               <div className="items-center ">
                 <h1 className="text-TextWhite">Get in touch with us on:</h1>
                 <div className="sm:flex space-x-[16px] pt-2">
@@ -107,85 +109,94 @@ const Contact = () => {
               <h1 className="font-lato text-[20px] font-regular">
                 Please Choose a niche below:
               </h1>
-              <div className="">
-                <div>
-                  <input
-                    type="checkbox"
-                    id="typing"
-                    name="typing"
-                    value={"Service related query"}
-                    placeholder=""
-                    className="bg-black"
-                    
-                  ></input>
+              <div className="gap-y-[5px] flex flex-col">
+                <div className="flex items-center">
+                  <Checkbox.Root
+                    className="flex items-center justify-center rounded-[1px] bg-prinme  outline outline-2 w-[14px] h-[14px] focus:shadow-[0_0_0_2px_black]"
+                    defaultUnchecked
+                    id="c1"
+                  >
+                    <Checkbox.Indicator className="text-violet11">
+                      <CheckIcon />
+                    </Checkbox.Indicator>
+                  </Checkbox.Root>
                   <label
-                    className="font-lato text-[20px] font-regular pl-[15px]"
-                    htmlFor="flexCheckDefault"
+                    className="pl-[15px] text-[20px] font-lato font-regular leading-none text-TextWhite"
+                    htmlFor="c1"
                   >
                     Service Related Query
                   </label>
                 </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="typing"
-                    name="typing"
-                    value={"Service related query"}
-                    placeholder=""
-                    className=" accent-pink-500 bg-black"
-                    style={{ backgroundColor: '#000000' }}
-                  ></input>
-                  <label
-                    className="font-lato text-[20px] font-regular pl-[15px]"
-                    htmlFor="flexCheckDefault"
+
+                <div className="flex items-center">
+                  <Checkbox.Root
+                    className="flex items-center justify-center rounded-[1px] bg-prinme  outline outline-2 w-[14px] h-[14px] focus:shadow-[0_0_0_2px_black]"
+                    defaultUnchecked
+                    id="c1"
                   >
-                    Other
-                  </label>
-                </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="typing"
-                    name="typing"
-                    value={"Service related query"}
-                    placeholder=""
-                  ></input>
+                    <Checkbox.Indicator className="text-violet11">
+                      <CheckIcon />
+                    </Checkbox.Indicator>
+                  </Checkbox.Root>
                   <label
-                    className="font-lato text-[20px] font-regular pl-[15px]"
-                    htmlFor="flexCheckDefault"
+                    className="pl-[15px] text-[20px] font-lato font-regular leading-none text-TextWhite"
+                    htmlFor="c1"
                   >
                     Feedback
                   </label>
                 </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="typing"
-                    name="typing"
-                    value={"Service related query"}
-                    placeholder=""
-                  ></input>
+
+                <div className="flex items-center">
+                  <Checkbox.Root
+                    className="flex items-center justify-center rounded-[1px] bg-prinme  outline outline-2 w-[14px] h-[14px] focus:shadow-[0_0_0_2px_black]"
+                    defaultUnchecked
+                    id="c1"
+                  >
+                    <Checkbox.Indicator className="text-violet11">
+                      <CheckIcon />
+                    </Checkbox.Indicator>
+                  </Checkbox.Root>
                   <label
-                    className="font-lato text-[20px] font-regular pl-[15px]"
-                    htmlFor="flexCheckDefault"
+                    className="pl-[15px] text-[20px] font-lato font-regular leading-none text-TextWhite"
+                    htmlFor="c1"
                   >
                     Wish To Partner-up
                   </label>
                 </div>
-                <div>
-                  <input
-                    type="checkbox"
-                    id="typing"
-                    name="typing"
-                    value={"Service related query"}
-                    placeholder=""
-                   
-                  ></input>
+
+                <div className="flex items-center">
+                  <Checkbox.Root
+                    className="flex items-center justify-center rounded-[1px] bg-prinme  outline outline-2 w-[14px] h-[14px] focus:shadow-[0_0_0_2px_black]"
+                    defaultUnchecked
+                    id="c1"
+                  >
+                    <Checkbox.Indicator className="text-violet11">
+                      <CheckIcon />
+                    </Checkbox.Indicator>
+                  </Checkbox.Root>
                   <label
-                    className="font-lato text-[20px] font-regular pl-[15px]"
-                    htmlFor="flexCheckDefault"
+                    className="pl-[15px] text-[20px] font-lato font-regular leading-none text-TextWhite"
+                    htmlFor="c1"
                   >
                     Franchise Related Query
+                  </label>
+                </div>
+
+                <div className="flex items-center">
+                  <Checkbox.Root
+                    className="flex items-center justify-center rounded-[1px] bg-prinme  outline outline-2 w-[14px] h-[14px] focus:shadow-[0_0_0_2px_black]"
+                    defaultUnchecked
+                    id="c1"
+                  >
+                    <Checkbox.Indicator className="text-violet11">
+                      <CheckIcon />
+                    </Checkbox.Indicator>
+                  </Checkbox.Root>
+                  <label
+                    className="pl-[15px] text-[20px] font-lato font-regular leading-none text-TextWhite"
+                    htmlFor="c1"
+                  >
+                    Other{" "}
                   </label>
                 </div>
               </div>
@@ -264,9 +275,12 @@ const Contact = () => {
                   />
                 </div>
               ) : (
-                <div className=""><Chat/>  <div className="absolute left-1/2 -translate-x-1/2 w-full  bottom-[21px] px-[21px] ">
-                <MessageInput />
-              </div></div>
+                <div className="">
+                  <Chat />{" "}
+                  <div className="absolute left-1/2 -translate-x-1/2 w-full  bottom-[21px] px-[21px] ">
+                    <MessageInput />
+                  </div>
+                </div>
               )}
             </div>
           </div>

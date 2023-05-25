@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import Check from "../Servises/assets/Check.svg";
 import BackArrow from "../Servises/assets/BackArrow.svg";
@@ -6,6 +6,11 @@ import DilogCart from "../Servises/assets/DilogCart.svg";
 import "./styles.css";
 
 export default function TypesOfServices({ service, index }) {
+  const [authorised, setAuthorised] = useState(false);
+  const handleClick = () => {
+    setAuthorised(true);
+  };
+
   const ServiceSpecifications = [
     "AC Vent Cleaning",
     "AC Vent Cleaning",
@@ -26,7 +31,7 @@ export default function TypesOfServices({ service, index }) {
 
           <div className=" m-auto           relative">
             <Dialog.Trigger asChild>
-              <div className="border border-white text-white hover:text-black hover:bg-bg cursor-pointer mx-auto rounded-xl text-center w-[300px]  h-[300px]">
+              <div className="border border-white text-white hover:text-black hover:bg-[#A0A0A0] cursor-pointer mx-auto rounded-xl text-center w-[300px]  h-[300px]">
                 {/* <img src={go} className="float-right p-2 text-pila " /> */}
                 <div className="mx-auto rounded-lg  bg-white mt-7 w-[154px] h-[130px] "></div>
                 <div className="text-center">
@@ -43,9 +48,9 @@ export default function TypesOfServices({ service, index }) {
             <div className="absolute w-full flex justify-center  -bottom-6">
               <div className="max-w-[175px] max-h-[50px]">
                 <button className="cursor-default text-center text-black font-lato font-bold text-[20px] bg-pila  w-[175px]  rounded-[10px]  h-[50px]">
-                  book Now
+                  KNOW MORE
                 </button>
-              </  div>
+              </div>
             </div>
           </div>
         </div>
@@ -92,14 +97,29 @@ export default function TypesOfServices({ service, index }) {
               </h1>
             </div>{" "}
           </div>
-          <Dialog.Close asChild className="">
+          {!authorised ? (
             <div className=" flex justify-center">
-              <button className="font-lato font-bold text-[30px] flex bg-pila gap-[15px] h-[60px] items-center justify-center rounded-[10px] w-[320px] shadow-md shadow-bg">
+              <button
+                className="font-lato font-bold text-[30px]  flex bg-pila gap-[15px] h-[60px] items-center justify-center rounded-[10px] w-[320px] shadow-md shadow-bg"
+                onClick={handleClick}
+              >
                 <img src={DilogCart} />
                 Add To Cart
               </button>
             </div>
-          </Dialog.Close>
+          ) : (
+            <div className=" flex justify-center">
+              <Dialog.Close asChild className="">
+                <button
+                  className="font-lato active:bg-bg text-TextWhite  font-bold text-[30px] flex bg-[#41B826] gap-[15px] h-[60px] items-center justify-center rounded-[10px] w-[320px] shadow-md shadow-bg"
+                  onClick={handleClick}
+                >
+                  <img src={DilogCart} />
+                  Added To Cart
+                </button>
+              </Dialog.Close>
+            </div>
+          )}
           <Dialog.Close asChild></Dialog.Close>
         </Dialog.Content>
       </Dialog.Portal>

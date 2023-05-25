@@ -38,7 +38,7 @@ const ServiceHistory = () => {
     },
   ];
   return (
-    <div className="bg-second p-[54px] h-screen ml-3">
+    <div className="bg-second p-[54px] bg-fixed h-screen ml-3">
       <div className="flex items-center mb-[48px]">
         <img src={go} alt="" className="w-[39px] h-[39px] rotate-180" />
         <h1 className=" pl-[26px]  font-lato text-TextWhite font-extrabold text-[48px]">
