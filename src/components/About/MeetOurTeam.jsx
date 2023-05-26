@@ -1,5 +1,6 @@
 import React from 'react'
 import Team from './Team';
+import MeetTeam from '../About/Assets/MeetTeam.png'
 
 
 const people = [
@@ -30,7 +31,7 @@ const people = [
   ];
 export const MeetOurTeam = () => {
   return (
-    <div>
+    <div className='h-screen bg-no-repeat bg-cover justify-center flex flex-col' style={{backgroundImage: `url(${MeetTeam})`}}>
         <div className="text-white text-center py-7  text-6xl font-bold">
         MEET OUR TEAM
       </div>
