@@ -1,11 +1,11 @@
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { MeetOurTeam } from "./MeetOurTeam";
-
+import WhatWeDo from '../About/Assets/WhatWeDo.png'
 
 export const WhtWeDo = () => {
   return (
-    <div className="">
+    <div className="bg-opacity-70 " style={{backgroundImage: `url(${WhatWeDo})`}}>
       <div className="text-white text-center py-7 text-5xl font-extrabold">
         WHAT WE DO?
       </div>

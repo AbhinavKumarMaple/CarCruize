@@ -1,13 +1,12 @@
 import React from "react";
-
 const Team = ({ picture, role, name, description, index }) => {
   return (
 
 
-            <div className=" flex flex-col items-center ">
+            <div className=" flex flex-col items-center "  >
                 
               <div
-                className="w-60 h-60 bg-cover rounded-2xl"
+                className="w-60 h-60 bg-cover rounded-2xl"  
                 style={{ backgroundImage: `url(${picture})` }}
               ></div>
               <h1 className="text-center text-white text-2xl font-bold">{name}</h1>
