@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -18,7 +19,8 @@ export default {
           "TextWhite":"#EDEDED",
         },
         fontFamily: {
-          'lato': ['Lato', 'sans-serif'],
+          
+          'lato': ['Lato', 'sans-serif','italic'],
           'Montserrat': ['Montserrat', 'sans-serif'],
           'Poppins' : ['Poppins']
         },

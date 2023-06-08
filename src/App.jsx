@@ -1,17 +1,15 @@
 import NavBar from "./components/navbar/NavBar";
-import MainContent from "./components/HomePage/MainContent";
 import SideBar from "./components/SideNav/SideBar";
 import HomeMain from "./components/HomePage/HomeMain";
-import LoginPage from "./components/Loginpage/LoginPage";
 import Services from "./components/Servises/Services";
 import Contact from "./components/ContactUs/Contact";
 import { About } from "./components/About/About";
 import { Route, Routes } from "react-router-dom";
-import DashboardMain from "./components/Dashboard/DashboardMain";
-import Landing from "./components/Dashboard/LandingPage/Landing";
+import Dash from "./components/Dashboard/Dash";
 import Blog from "./components/Blog/Blog";
 import BlogView from "./components/Blog/BlogView";
 import ServiceHistory from "./components/Dashboard/ServiceHistory/ServiceHistory";
+import ServiceDescription from "./components/Servises/Pages/ServiceDescription";
 function App() {
   return (
     <div className="bg-bg">
@@ -21,10 +19,10 @@ function App() {
         <div className="ml-[7.2rem]  rounded-r-[10px] overflow-">
           <Routes>
             <Route path="/" element={<HomeMain />} />
-            <Route path="/dashboard" element={<DashboardMain />} />
+            <Route path="/dashboard" element={<Dash/>} />
 
             <Route path="/dashboard/service" element={<ServiceHistory />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/services" element={<ServiceDescription />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogView />} />
             <Route path="/support" element={<Contact />} />

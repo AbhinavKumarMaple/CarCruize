@@ -6,7 +6,8 @@ import Booking from "./booking/Booking";
 import Cart from "./Cart/Cart";
 import Wallet from "./Wallet/Wallet";
 import { Link } from "react-router-dom";
-const DashboardMain = () => {
+import { useState } from "react";
+const Dashboard = () => {
   const carData = [
     {
       name: "Akshat Varma",
@@ -118,10 +119,10 @@ const DashboardMain = () => {
     </div>
     <div className="bg-prime max-h-[863px] rounded-[10px] border-2 w-full overflow-hidden">
         {/* <Cart/> */}
-        <Wallet/>
+        <Cart/>
     </div>
     </div>
   );
 };
 
-export default DashboardMain;
+export default Dashboard;
