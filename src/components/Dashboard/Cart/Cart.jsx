@@ -3,7 +3,7 @@ import Ad from "../../assets/asset/AD.png";
 import DENTING from "../../assets/asset/DENTING.png";
 import ManCart from "../../assets/asset/ManCart.svg";
 import SAVE from "../../assets/asset/SAVE.png";
-import wallet from "../../assets/asset/Wallet.png";
+import walletpic from "../../assets/asset/Wallet.png";
 import Wallet from "../Wallet/Wallet";
 const Cart = () => {
   const [WalletPage, setWalletPage] = useState(false);
@@ -13,7 +13,7 @@ const Cart = () => {
         <div className="relative  px-[29px]">
           <div className="absolute  right-0 top-0  overflow-hidden">
             <img
-              src={wallet}
+              src={walletpic}
               onClick={() => setWalletPage(true)}
               className="rounded-[10px]  m-[16px]"
             />
