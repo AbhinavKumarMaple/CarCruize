@@ -1,13 +1,18 @@
-import Wallet from "../../assets/asset/Wallet.png";
+import wallet from "../../assets/asset/wallet.png";
+import Wallet from "../Wallet/Wallet";
 import ManCart from "../../assets/asset/ManCart.svg";
 import Ad from "../../assets/asset/AD.png";
 import SAVE from "../../assets/asset/SAVE.png";
 import DENTING from "../../assets/asset/DENTING.png";
+import { useState } from "react";
 const Cart = () => {
+  const [WalletPage , setWalletPage] = useState(false);
   return (
-    <div className="relative  px-[29px]">
-      <div className="absolute right-0 top-0  overflow-hidden">
-        <img src={Wallet} className="rounded-[10px]  m-[16px]" />
+    <div>
+      {!WalletPage ? 
+        <div className="relative  px-[29px]">
+      <div className="absolute  right-0 top-0  overflow-hidden">
+        <img src={wallet} onClick={() => setWalletPage(true)} className="rounded-[10px]  m-[16px]" />
       </div>
       <div className="flex  pt-[43px] justify-center">
         <div className=" ">
@@ -34,7 +39,11 @@ const Cart = () => {
           <img src={DENTING} />
         </div>
       </div>
+    </div> : <Wallet/>
+
+      }
     </div>
+    
   );
 };
 
