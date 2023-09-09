@@ -22,7 +22,7 @@ function App() {
             <Route path="/dashboard" element={<Dash/>} />
 
             <Route path="/dashboard/service" element={<ServiceHistory />} />
-            <Route path="/services" element={<ServiceDescription />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogView />} />
             <Route path="/support" element={<Contact />} />
